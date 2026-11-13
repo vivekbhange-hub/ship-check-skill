@@ -1,0 +1,4 @@
+# Fixtures: fake credentials, a deliberately flawed sample app, and test strings that look like env reads.
+tests/
+examples/sample-app/
+examples/regenerate.py

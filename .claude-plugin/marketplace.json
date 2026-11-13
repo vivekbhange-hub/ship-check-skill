@@ -1,0 +1,15 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "ship-check-skill",
+  "description": "The 60-second pre-flight for anything you are about to ship: leaked secrets, env var drift, Dockerfile footguns and GitHub Actions holes.",
+  "owner": { "name": "Vivek Bhange", "url": "https://github.com/vivekbhange-hub" },
+  "plugins": [
+    {
+      "name": "ship-check-skill",
+      "description": "Five skills and two agents: scan for secrets with a rotation-first response, audit env var drift, lint and rewrite Dockerfiles, harden GitHub Actions workflows, and merge it all into a go or no-go report that refuses to say ship it while a high-severity finding is open.",
+      "source": "./",
+      "category": "development",
+      "homepage": "https://github.com/vivekbhange-hub/ship-check-skill"
+    }
+  ]
+}

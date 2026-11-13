@@ -1,0 +1,26 @@
+name: Deploy
+on:
+  push:
+    branches: [main]
+  pull_request_target:
+    types: [opened, synchronize]
+jobs:
+  deploy:
+    runs-on: [self-hosted, linux]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+      - uses: acme-corp/deploy-action@main
+        with:
+          host: ${{ secrets.DEPLOY_HOST }}
+      - name: Install
+        run: npm ci
+      - name: Tests
+        run: npm test
+        continue-on-error: true
+      - name: Announce
+        run: |
+          echo "Deploying: ${{ github.event.pull_request.title }}"
+          echo "token is ${{ secrets.DEPLOY_TOKEN }}"
+          curl -fsSL https://get.example.invalid/install.sh | bash

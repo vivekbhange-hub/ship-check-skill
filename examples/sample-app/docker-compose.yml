@@ -1,0 +1,12 @@
+services:
+  web:
+    build: .
+    env_file: .env
+    environment:
+      NODE_ENV: production
+      REDIS_URL: redis://redis:6379
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    ports:
+      - "3000:3000"
+  redis:
+    image: redis:7
