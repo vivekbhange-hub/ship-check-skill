@@ -2,7 +2,7 @@
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "ship-check-skill",
   "description": "The 60-second pre-flight for anything you are about to ship: leaked secrets, env var drift, Dockerfile footguns and GitHub Actions holes.",
-  "owner": { "name": "Vivek Bhange", "url": "https://github.com/vivekbhange-hub" },
+  "owner": { "name": "Vivek Bhange", "url": "https://vivekbhange.tech" },
   "plugins": [
     {
       "name": "ship-check-skill",

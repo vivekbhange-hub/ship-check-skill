@@ -2,7 +2,7 @@
   "name": "ship-check-skill",
   "description": "The 60-second pre-flight for anything you are about to ship: leaked secrets, env var drift, Dockerfile footguns and GitHub Actions holes, merged into one go or no-go report. Secrets are always masked and rotation comes before cleanup.",
   "version": "1.0.0",
-  "author": { "name": "Vivek Bhange", "url": "https://github.com/vivekbhange-hub" },
+  "author": { "name": "Vivek Bhange", "url": "https://vivekbhange.tech" },
   "homepage": "https://github.com/vivekbhange-hub/ship-check-skill",
   "repository": "https://github.com/vivekbhange-hub/ship-check-skill",
   "license": "MIT",
